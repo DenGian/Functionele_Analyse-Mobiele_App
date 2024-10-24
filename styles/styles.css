@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #f0f4f8;
+	color: #333;
+}
+
+header {
+	background-color: #4caf50;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 2.5em;
+}
+
+header p {
+	font-size: 1.2em;
+}
+
+main {
+	padding: 20px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#screens {
+	margin-top: 20px;
+}
+
+.screen-card {
+	background-color: white;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.screen-card h3 {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+}
+
+.screen-card ul {
+	list-style-type: none;
+}
+
+.screen-card ul li {
+	margin-bottom: 10px;
+}
+
+.details-button {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.details-button:hover {
+	background-color: #45a049;
+}
+
+#easter-egg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f9f9f9;
+	padding: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	z-index: 1000;
+	text-align: center;
+}
+
+#easter-egg img {
+	width: 200px;
+	margin-top: 10px;
+}
+
+#easter-egg.show {
+	display: block;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+footer {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
