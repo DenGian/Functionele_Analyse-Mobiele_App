@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Functionele Analyse Mobiele App</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<script src="scripts/script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>📱 Functioneel Design voor Mobiele Applicatie</h1>
+			<p>Opdracht voor Webframeworks - React Native Project</p>
+		</header>
+
+		<main>
+			<section id="introduction">
+				<h2>Inleiding</h2>
+				<p>
+					Voor deze opdracht werk ik aan een mobiele applicatie met behulp van React Native. De app toont
+					technische meetups en tutorials, inclusief hun locatie en onderwerp. De app gebruikt Expo's
+					kalender en kaartfuncties om een intuïtieve ervaring te bieden.
+				</p>
+			</section>
+
+			<section id="screens">
+				<h2>Schermen</h2>
+
+				<article class="screen-card">
+					<h3>🏠 Scherm 1: Home Screen</h3>
+					<p>Het beginscherm toont een lijst van meetups en tutorials.</p>
+					<ul>
+						<li><b>Zoekfunctie:</b> Filter evenementen op type, onderwerp of moeilijkheidsniveau.</li>
+						<li><b>Toevoegen-knop:</b> Voeg een nieuw evenement toe via een formulier.</li>
+					</ul>
+					<button class="details-button" data-screen="home">Details bekijken</button>
+				</article>
+
+				<article class="screen-card">
+					<h3>🔍 Scherm 2: Detail Screen</h3>
+					<p>Dit scherm toont de gedetailleerde informatie van een evenement.</p>
+					<ul>
+						<li><b>Kaartweergave:</b> Toont de locatie van het evenement op basis van coördinaten.</li>
+						<li><b>Bewerk-knop:</b> Bewerken van evenement via een formulier.</li>
+					</ul>
+					<button class="details-button" data-screen="detail">Details bekijken</button>
+				</article>
+
+				<article class="screen-card">
+					<h3>📅 Scherm 3: Kalender Scherm</h3>
+					<p>Dit scherm toont een kalender met de evenementen per datum.</p>
+					<ul>
+						<li><b>Kalender:</b> Toont evenementen op basis van geselecteerde datum.</li>
+						<li><b>Evenementenlijst:</b> Filter evenementen op geselecteerde datum.</li>
+					</ul>
+					<button class="details-button" data-screen="calendar">Details bekijken</button>
+				</article>
+
+				<article class="screen-card">
+					<h3>✏️ Scherm 4: Voeg/Bewerk Evenement</h3>
+					<p>Formulier voor het toevoegen of bewerken van een evenement.</p>
+					<ul>
+						<li><b>Kaartinput:</b> Selecteer een locatie door een pin te plaatsen.</li>
+						<li><b>Opslaan-knop:</b> Sla evenement op via POST/PUT.</li>
+					</ul>
+					<button class="details-button" data-screen="edit">Details bekijken</button>
+				</article>
+			</section>
+
+			<section id="easter-egg" hidden>
+				<h2>🎉 hehe!</h2>
+				<p>Gefeliciteerd, je hebt de geheime code ontgrendeld! 🎁</p>
+				<p>Get Rick Rolled tho!</p>
+				<img src="https://media1.tenor.com/m/x8v1oNUOmg4AAAAd/rickroll-roll.gif" alt="Easter Egg" />
+				<button id="close-easter-egg">Sluiten</button>
+			</section>
+		</main>
+
+		<footer>
+			<p>React Native Project | Gemaakt door Ian Mondelaers</p>
+		</footer>
+	</body>
+</html>
